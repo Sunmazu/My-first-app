@@ -9,9 +9,38 @@ body{
     padding:16px;
     width:100%;
     border:none;
+    outline:none;
 }
 
 .alertbtn:hover{
     background-color: #555770;
     cursor:pointer;
 }
+
+/* Kalkulator */
+#calculator {
+    background: #eaeaea;
+    margin: 0 auto;
+    padding: 35px 25px 35px 25px;
+    text-align: center;
+}
+.calcbtn{
+    background-color:#8F90A6;
+    color:white;
+    padding: 10px;
+    margin:5px;
+    width: 40px;
+    border:none;
+}
+
+#calculator input[type="text"] {
+    padding: 10px;
+    width: 147px;
+    margin-bottom: 5px;
+}
+#calculator{
+    padding:10px;
+    width: 180px;
+}
+
+/*Popup do kalkulatora*/

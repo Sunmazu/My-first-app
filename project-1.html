@@ -13,5 +13,17 @@
     <button class="alertbtn" onclick="alert2()">Kim jestem?</button><br>
     <button class="alertbtn" onclick="alert3()">Czemu tu zajrzałeś?</button><br>
     <button class="alertbtn" onclick="alert4()">Czy jesteś developerem?</button><br>
+    <button class="alertbtn popup">EXERCISE #1 >> Kalkulator</button>
+    <form id="calculator">
+        <input type="text" id="a" placeholder="a" />
+        <input type="text" id="b" placeholder="b" />
+        <input type="text" id="result" placeholder="=" disabled="disabled" />
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">+</button>
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">-</button>
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">x</button>   
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">/</button>
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">%</button>
+        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">**</button>
+    </form>
 </body>
 </html>
