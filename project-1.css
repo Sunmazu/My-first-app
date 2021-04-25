@@ -1,0 +1,17 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.alertbtn{
+    background-color: #28293D;
+    color:white;
+    padding:16px;
+    width:100%;
+    border:none;
+}
+
+.alertbtn:hover{
+    background-color: #555770;
+    cursor:pointer;
+}
