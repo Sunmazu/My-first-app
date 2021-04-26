@@ -1,8 +1,8 @@
 body{
     padding:0px;
     margin:0px;
+    background-color:#8F90A6;
 }
-
 .alertbtn{
     background-color: #28293D;
     color:white;
@@ -18,13 +18,16 @@ body{
 }
 
 /* Kalkulator */
-#calculator {
+.calculator {
     background: #eaeaea;
+    text-align: center;
+    width: 180px;
     margin: 0 auto;
     padding: 35px 25px 35px 25px;
-    text-align: center;
+
+    
 }
-.calcbtn{
+.calculator .calcbtn{
     background-color:#8F90A6;
     color:white;
     padding: 10px;
@@ -33,14 +36,45 @@ body{
     border:none;
 }
 
-#calculator input[type="text"] {
+.calculator input[type="text"] {
     padding: 10px;
-    width: 147px;
-    margin-bottom: 5px;
-}
-#calculator{
-    padding:10px;
-    width: 180px;
+    width: 80%;
+    margin-bottom:5px;
 }
 
-/*Popup do kalkulatora*/
+/*Accordion Calculator*/
+.active{
+    max-height:100vh !important;
+    transition: max-height 1s !important;
+}
+#ex1,#ex2{
+    max-height:0px;
+    overflow:hidden;
+    transition: max-height 1s !important;
+}
+
+/* Calculator 2.0 */
+.calculator2 {
+    background: #eaeaea;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    padding: 35px 25px 35px 25px;
+}
+.calculator2 .calcbtn{
+    background-color:#8F90A6;
+    color:white;
+    padding: 10px;
+    margin:5px;
+    width: 40px;
+    border:none;
+}
+
+.calculator2 input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+.disabled{
+    background-color:red !important;
+}

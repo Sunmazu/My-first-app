@@ -25,8 +25,8 @@ alert(isDev);
 }
 
 
-/* Kalkulator */
-function Calculator(operator) 
+/* calculator */
+function calculator(operator) 
 {
     var a = document.getElementById('a').value;
     var b = document.getElementById('b').value;  
@@ -56,4 +56,31 @@ function Calculator(operator)
     document.getElementById('result').value = '= ' + result;
 }
 
-/* Popup for Kalkulator*/
+/* accordion for calculator*/
+function accordion(id){
+    var acc=document.getElementById(id);
+    if(acc.classList.contains("active")){
+        acc.classList.remove("active");
+    }
+    else{
+        acc.classList.add("active");
+    }
+}
+
+/* Calculator 2.0 */
+
+var his = [];
+
+function calculator2(input) 
+{
+    console.log(input)
+    his.push(input);
+    document.getElementById('result2').value=his.join('');
+}
+function clearC2(){
+    his= [];
+    document.getElementById('result2').value=his.join('');
+}
+function domath(){
+    
+}

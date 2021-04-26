@@ -9,21 +9,51 @@
     <title>Components</title>
 </head>
 <body>
-    <button class="alertbtn" onclick="alert1()">Witaj</button><br>
-    <button class="alertbtn" onclick="alert2()">Kim jestem?</button><br>
-    <button class="alertbtn" onclick="alert3()">Czemu tu zajrzałeś?</button><br>
-    <button class="alertbtn" onclick="alert4()">Czy jesteś developerem?</button><br>
-    <button class="alertbtn popup">EXERCISE #1 >> Kalkulator</button>
-    <form id="calculator">
+    <button class="alertbtn" onclick="alert1()">Hello</button><br>
+    <button class="alertbtn" onclick="alert2()">Who am I?</button><br>
+    <button class="alertbtn" onclick="alert3()">Why did you wander here?</button><br>
+    <button class="alertbtn" onclick="alert4()">Are you a developer?</button><br>
+    
+    <button  class="alertbtn" onclick="accordion('ex1')">EXERCISE #1 >> Calculator</button>
+    <div id="ex1">
+    <form class="calculator">
         <input type="text" id="a" placeholder="a" />
         <input type="text" id="b" placeholder="b" />
         <input type="text" id="result" placeholder="=" disabled="disabled" />
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">+</button>
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">-</button>
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">x</button>   
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">/</button>
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">%</button>
-        <button type="button" class="calcbtn" onclick="Calculator(this.innerHTML)">**</button>
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">+</button>
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">-</button>
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">x</button>   
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">/</button>
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">%</button>
+        <button type="button" class="calcbtn" onclick="calculator(this.innerHTML)">**</button>
     </form>
+    </div>
+
+    <button class="alertbtn" onclick="accordion('ex2')">EXERCISE #2 >> Calculator 2.0</button>
+    <div id="ex2" >
+    <form class="calculator2">
+        <input type="text" id="result2" placeholder="=" disabled/>
+        <button type="button" class="calcbtn disabled" onclick="calculator2(this.innerHTML)" disabled>(</button>
+        <button type="button" class="calcbtn disabled" onclick="calculator2(this.innerHTML)" disabled>)</button>
+        <button type="button" class="calcbtn disabled" onclick="calculator2(this.innerHTML)" disabled>%</button>
+        <button type="button" class="calcbtn" onclick="clearC2()">CE</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">7</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">8</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">9</button>   
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">÷</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">4</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">5</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">6</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">x</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">1</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">2</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">3</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">-</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">0</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">.</button>
+        <button type="button" class="calcbtn" onclick="domath()">=</button>
+        <button type="button" class="calcbtn" onclick="calculator2(this.innerHTML)">+</button>
+    </form>
+    </div>
 </body>
 </html>
